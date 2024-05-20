@@ -942,7 +942,7 @@ form label {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  background: #01524C;
   margin: 0 4px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1017,7 +1017,10 @@ form label {
 }
 
 .fh5co-section-gray {
-  background: rgba(0, 0, 0, 0.04);
+  /*background: rgba(0, 0, 0, 0.04);*/
+  background:url(https://i.pinimg.com/originals/33/c6/43/33c643b18115ea1de1a932506f7bc11d.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .couple-wrap {
@@ -1043,7 +1046,7 @@ form label {
   font-size: 20px;
   background: #fff;
   padding: 20px;
-  color: #F14E95;
+  color: #ec0909e2;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1066,7 +1069,7 @@ form label {
 }
 .couple-half h3 {
   font-family: "Sacramento", Arial, serif;
-  color: #F14E95;
+  color: #0C3835;
   font-size: 30px;
 }
 .couple-half .groom, .couple-half .bride {
@@ -1181,12 +1184,14 @@ form label {
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #F14E95;
+  color: #01524C;
   font-family: "Sacramento", Arial, serif;
+  letter-spacing: 1px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
     font-size: 40px;
+    
   }
 }
 .fh5co-heading p {
@@ -1838,6 +1843,56 @@ form label {
 
 .js .animate-box {
   opacity: 0;
+  
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+.container-img{
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 20px;
+}
+.container-img .box-img figure{
+  width: 100%;
+  height: 100%;
+}
+.container-img .box-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-img .box-img:nth-child(1){
+  grid-column-start: span 2;
+}
+.container-img .box-img:nth-child(4){
+  grid-row-start: span 2;
+}
+@media screen and (max-width:800px){
+  .container-img{
+      width: 95%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      grid-template-rows: 200px;
+  }
+  .container-img .box-img:nth-child(1){
+      grid-column-start: span 1;
+  }
+}
+@media screen and (max-width:500px){
+  .container-img{
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+  }
+  .container-img .box-img img{
+      height: 200px;
+  }
+}
